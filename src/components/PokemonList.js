@@ -10,7 +10,7 @@ export default function PokemonList( {pokemons} ) {
 
                 <Dropdown.Menu>
                     {pokemons.map((pokemon => {
-                        return <Dropdown.Item href="#" key={pokemon}>{pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}</Dropdown.Item>
+                        return <Dropdown.Item href="#" key={pokemon.name}>{pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}</Dropdown.Item>
                     }))}
                 </Dropdown.Menu>
             </Dropdown>
